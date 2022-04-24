@@ -1,0 +1,87 @@
+:root {
+  --background-colour: #191662;
+  --byline-colour: #777;
+  --grid-colour: #777;
+  --resolution-colour: #fcc;
+  --angle-colour: #cfc;
+}
+
+
+.backdrop {
+  fill: var(--background-colour);
+}
+
+.byline {
+  fill: var(--byline-colour);
+  font-size: 1.5rem;
+  text-anchor: end;
+}
+
+#grid rect {
+  stroke: var(--grid-colour);
+  stroke-width: 3;
+  fill: transparent;
+}
+
+#grid line {
+  stroke: var(--grid-colour);
+}
+
+
+#resolution line,
+#resolution rect {
+  stroke: var(--resolution-colour);
+  stroke-width: 3;
+  fill: transparent;
+}
+
+#resolution circle {
+  stroke: var(--resolution-colour);
+  stroke-width: 2;
+  fill: var(--background-colour);
+}
+
+#resolution .labels circle,
+#resolution text {
+  fill: var(--resolution-colour);
+}
+
+#resolution .ratios text {
+  font-size: 3rem;
+  text-anchor: middle; 
+}
+
+#resolution .labels text {
+  font-size: 2.5rem;
+  text-anchor: end;
+}
+
+#resolution .labels .title {
+  font-size: 4rem;
+  text-anchor: start; 
+}
+
+
+#angles circle,
+#angles line {
+  stroke-width: 1;
+  stroke: var(--angle-colour);
+  fill: var(--background-colour);
+}
+
+#angles path {
+  stroke-width: 1;
+  stroke: var(--angle-colour);
+  fill: transparent;
+}
+
+#angles text {
+  font-size: 16px;
+  text-anchor: middle; 
+  fill: var(--angle-colour);
+}
+
+#angles .title {
+  font-size: 1.25rem;
+  text-anchor: start; 
+}

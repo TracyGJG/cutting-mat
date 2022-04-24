@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1400" height="1000">
+    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="cutting-mat.css" type="text/css"/>
+
+    <rect x="0" y="0" width="1400" height="1000" class="backdrop"></rect>
+
+    <text x="1380" y="980" class="byline">Created by T-G Gilmore, 2022, using hand-written SVG, CSS and JavaScript</text>
+    <foreignObject x="20" y="948" width="106" height="38">
+        <a xmlns="http://www.w3.org/1999/xhtml" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        </a>
+    </foreignObject>
+
+    <script href="cutting-mat.js"></script>
+</svg>

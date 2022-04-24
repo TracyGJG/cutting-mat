@@ -1,0 +1,25 @@
+:root {
+  --background-colour: #191662;
+  --byline-colour: #777;
+  --grid-colour: #777;
+}
+
+.backdrop {
+  fill: var(--background-colour);
+}
+
+.byline {
+  fill: var(--byline-colour);
+  font-size: 1.5rem;
+  text-anchor: end;
+}
+
+#grid rect {
+  stroke: var(--grid-colour);
+  stroke-width: 3;
+  fill: transparent;
+}
+
+#grid line {
+  stroke: var(--grid-colour);
+}
