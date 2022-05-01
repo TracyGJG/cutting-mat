@@ -6,8 +6,8 @@ function drawGrid() {
 	const gridSize = 40;
 	const grid = document.querySelector('#grid g');
 
-	function repeatFn(times, fn) {
-		[...'*'.repeat(times)].forEach(fn);
+	function repeatFn(occurrence, fn) {
+		[...'*'.repeat(occurrence)].forEach(fn);
 	}
 
 	function drawLine(x1, y1, x2, y2, dash) {
