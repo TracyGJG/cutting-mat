@@ -4,7 +4,7 @@
   --grid-colour: #777;
   --resolution-colour: #fcc;
   --angle-colour: #cfc;
-  --aestetic-colour: #ccf;
+  --aesthetic-colour: #ccf;
 }
 
 
@@ -87,7 +87,42 @@
   fill: var(--angle-colour);
 }
 
+#angles .label {
+  font-size: 20px;
+}
+
 #angles .title {
   font-size: 1.25rem;
   text-anchor: start; 
+}
+
+
+
+#aestheticRatios circle,
+#aestheticRatios line {
+  stroke-width: 1;
+  stroke: var(--aesthetic-colour);
+  fill: var(--background-colour);
+}
+
+#aestheticRatios text {
+  font-size: 20px;
+  text-anchor: middle; 
+  fill: var(--aesthetic-colour);
+}
+
+#aestheticRatios .value {
+  font-size: 14px;
+}
+
+#aestheticRatios .title {
+  font-size: 1.25rem;
+  text-anchor: start; 
+}
+
+#aestheticRatios path {
+  stroke-width: 1;
+  stroke: var(--aesthetic-colour);
+  stroke-dasharray: 8,8;
+  fill: transparent;
 }

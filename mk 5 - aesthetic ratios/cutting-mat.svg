@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1400" height="1000">
+    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="cutting-mat.css" type="text/css"/>
+
+    <rect x="0" y="0" width="1400" height="1000" class="backdrop"></rect>
+
+    <text x="1380" y="980" class="byline">Created by T-G Gilmore, 2022, using hand-written SVG, CSS and JavaScript</text>
+    <foreignObject x="20" y="948" width="106" height="38">
+        <a xmlns="http://www.w3.org/1999/xhtml" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        </a>
+    </foreignObject>
+
+    <svg x="58" y="58" width="1284" height="804" viewBox="-2 -2 1284 804" id="grid">
+        <g>
+            <!-- Horizontal and vertical lines inserted here -->
+        </g>
+        <g>
+            <rect x="0" y="0" width="1280" height="800" class="border"></rect>
+        </g>
+    </svg>
+    
+    <svg x="20" y="20" width="1360" height="880" id="resolution" viewBox="-125 -125 4250 2750">
+        <g class="ratios"></g>
+
+        <g class="rectangles"></g>
+
+        <g class="labels">
+            <text x="25" y="-25" class="title">Screen Resolutions</text>
+            <circle cx="0" cy="0" r="15"></circle>
+        </g>
+    </svg>
+
+    <svg x="20" y="20" width="1360" height="880" id="angles" viewBox="-40 -40 1360 880">
+        <g></g>
+        <g>
+            <text x="250" y="-7" class="title">Standard Angles</text>
+            <circle cx="0" cy="800" r="10"></circle>
+        </g>
+    </svg>
+
+    <svg x="20" y="20" width="1360" height="880" id="aestheticRatios" viewBox="-40 -40 1360 880">
+        <g>
+            <line x1="0" y1="800" x2="902" y2="0"/>
+            <circle cx="902" cy="0" r="20"></circle>
+            <text x="902" y="8">VC</text>
+            <path d="M 0 560 A 240 240 0 0 1 180 640"/>
+            <circle cx="180" cy="640" r="3"></circle>
+            <circle cx="0" cy="560" r="20"></circle>
+            <text x="0" y="566" class="value">1.128</text>
+
+            <line x1="0" y1="800" x2="1131" y2="0"/>
+            <circle cx="1131" cy="0" r="20"></circle>
+            <text x="1131" y="8">PH</text>
+            <path d="M 0 400 A 400 400 0 0 1 327 569"/>
+            <circle cx="327" cy="569" r="3"></circle>
+            <circle cx="0" cy="400" r="20"></circle>
+            <text x="0" y="406" class="value">1.414</text>
+
+            <line x1="0" y1="800" x2="1280" y2="9"/>
+            <circle cx="1280" cy="9" r="20"></circle>
+            <text x="1280" y="17">GR</text>
+            <path d="M 560 800 A 560 560 0 0 0 476 506"/>
+            <circle cx="476" cy="506" r="3"></circle>
+            <circle cx="560" cy="800" r="20"></circle>
+            <text x="560" y="806" class="value">1.618</text>
+
+            <line x1="0" y1="800" x2="1280" y2="270"/>
+            <circle cx="1280" cy="270" r="20"></circle>
+            <text x="1280" y="278">SR</text>
+            <path d="M 720 800 A 720 720 0 0 0 665 524"/>
+            <circle cx="665" cy="524" r="3"></circle>
+            <circle cx="720" cy="800" r="20"></circle>
+            <text x="720" y="806" class="value">2.414</text>
+        </g>
+        <g>
+            <text x="500" y="-7" class="title">Aesthetic Ratios</text>
+            <circle cx="0" cy="800" r="5"></circle>
+        </g>
+    </svg>
+
+    <script href="cutting-mat.js"></script>
+</svg>

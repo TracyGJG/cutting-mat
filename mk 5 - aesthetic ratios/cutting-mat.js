@@ -2,6 +2,7 @@
 	drawGrid();
 	drawResolutions();
 	drawStandardAngles();
+	drawAestheticRatios();
 })();
 
 function drawGrid() {
@@ -97,6 +98,7 @@ function drawStandardAngles() {
 		const MINOR_CIRCLE = 3;
 		const MAJOR_CIRCLE = 20;
 		const TEXT_OFFSET = 6;
+		const LABEL_OFFSET = 8;
 		const CANVAS_WIDTH = 1280;
 		const CANVAS_HEIGHT = 800;
 		const ARC_INTERVAL = 160;
@@ -116,7 +118,7 @@ function drawStandardAngles() {
 		return `
 	<line x1="0" y1="${CANVAS_HEIGHT}" x2="${x}" y2="${y}"/>
 	<circle cx="${x}" cy="${y}" r="${MAJOR_CIRCLE}"></circle>
-	<text x="${x}" y="${y + TEXT_OFFSET}">${deg}°</text>
+	<text x="${x}" y="${y + LABEL_OFFSET}" class="label">${deg}°</text>
 	<path d="M ${arcStartX} ${CANVAS_HEIGHT} A ${arcStartX} ${arcStartX} 0 0 0 ${arcEndX} ${arcEndY}"/>
 	<circle cx="${arcEndX}" cy="${arcEndY}" r="${MINOR_CIRCLE}"></circle>
 	<circle cx="${arcStartX}" cy="${CANVAS_HEIGHT}" r="${MAJOR_CIRCLE}"></circle>
@@ -125,4 +127,8 @@ function drawStandardAngles() {
 	}
 
 	domAngles.innerHTML = anglesDegs.map(createAngleSvg).join('');
+}
+
+function drawAestheticRatios() {
+	//
 }
