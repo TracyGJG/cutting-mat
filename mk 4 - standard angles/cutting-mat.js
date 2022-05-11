@@ -32,12 +32,29 @@ function drawGrid() {
 }
 
 function drawResolutions() {
-	const resolutionRatios = document.querySelector('#resolution .ratios');
-	const resolutionLabels = document.querySelector('#resolution .labels');
-	const resolutionRectangles = document.querySelector(
-		'#resolution .rectangles'
-	);
+	drawProjectionLines();
+	drawScreenResultions();
+}
 
+function drawProjectionLines() {
+	const resolutionRatios = document.querySelector('#resolution .ratios');
+
+	const ratioLines = [
+		{ w: 3333, h: 2500, t: '4:3' },
+		{ w: 4000, h: 2250, t: '16:9' },
+	];
+
+	ratioLines.forEach(
+		r =>
+			(resolutionRatios.innerHTML += `<line x1="0" y1="0" x2="${r.w}" y2="${
+				r.h
+			}" stroke-dasharray="8,8"></line>
+<circle cx="${r.w}" cy="${r.h}" r="60"></circle>
+<text x="${r.w}" y="${r.h + 20}">${r.t}</text>`)
+	);
+}
+
+function drawScreenResultions() {
 	const resolution = [
 		{ width: 640, height: 480, spec: 'VGA/SD 480p', xOffset: 0, yOffset: 50 },
 		{ width: 800, height: 600, spec: 'SVGA', xOffset: 0, yOffset: 50 },
@@ -60,18 +77,14 @@ function drawResolutions() {
 		},
 		{ width: 3840, height: 2160, spec: 'UHD 4K', xOffset: -20, yOffset: -20 },
 	];
-	const ratioLines = [
-		{ w: 3333, h: 2500, t: '4:3' },
-		{ w: 4000, h: 2250, t: '16:9' },
-	];
 
-	ratioLines.forEach(
-		r =>
-			(resolutionRatios.innerHTML += `<line x1="0" y1="0" x2="${r.w}" y2="${
-				r.h
-			}"></line>
-<circle cx="${r.w}" cy="${r.h}" r="60"></circle>
-<text x="${r.w}" y="${r.h + 20}">${r.t}</text>`)
+	drawScreenResultionsRectangles(resolution);
+	drawScreenResultionsLabels(resolution);
+}
+
+function drawScreenResultionsRectangles(resolution) {
+	const resolutionRectangles = document.querySelector(
+		'#resolution .rectangles'
 	);
 
 	resolution.forEach(
@@ -79,6 +92,10 @@ function drawResolutions() {
 			(resolutionRectangles.innerHTML += `<rect x="0" y="0" width="${res.width}" height="${res.height}"></rect>
 	<circle cx="${res.width}" cy="${res.height}" r="10"></circle>`)
 	);
+}
+
+function drawScreenResultionsLabels(resolution) {
+	const resolutionLabels = document.querySelector('#resolution .labels');
 
 	resolution.forEach(
 		res =>
