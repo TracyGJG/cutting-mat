@@ -146,6 +146,10 @@
   fill: var(--background-colour);
 }
 
+.diagram rect {
+  stroke-width: 3px;
+}
+
 .diagram polyline {
   fill: none;
 }
