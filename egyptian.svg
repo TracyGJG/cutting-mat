@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="450" height="250" viewBox="-50 -50 900 500">
     <polyline points="-20,0 300,0 300,150 0,150 0,300 320,300" stroke="#00f" stroke-width="4" fill="none"/>
+    <circle cx="0" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#fff"/>
     <circle cx="100" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="200" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="300" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
@@ -11,8 +12,11 @@
     <circle cx="0" cy="300" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="100" cy="300" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="200" cy="300" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
+    <circle cx="300" cy="300" r="5" stroke="#00f" stroke-width="2" fill="#fff"/>
+
 
     <polyline points="820,0 400,0 800,300 800,-20" stroke="#00f" stroke-width="4" fill="none"/>
+    <circle cx="800" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#fff"/>
     <circle cx="700" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="600" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
     <circle cx="500" cy="0" r="5" stroke="#00f" stroke-width="2" fill="#00f"/>
